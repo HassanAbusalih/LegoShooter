@@ -6,12 +6,16 @@ public class RandomSpawner : MonoBehaviour
 {
     public GameObject target;
 
+
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Vector3 randomSpawnPosition = new Vector3(Random.Range(-10, 11), 5, Random.Range(-10, 11));
-            Instantiate(target, randomSpawnPosition, Quaternion.identity);
-        }
+        Spawntarget();
     }
+    IEnumerator Spawntarget()
+    {
+        Vector3 randomSpawnPosition = new Vector3(Random.Range(10, -11), Random.Range(0, 11), Random.Range(0, 10));
+        Instantiate(target, randomSpawnPosition, Quaternion.identity);
+        yield return new WaitForSeconds(1f);
+    }
+   
 }
