@@ -5,17 +5,25 @@ using UnityEngine;
 public class RandomSpawner : MonoBehaviour
 {
     public GameObject target;
-
+    public float Timer;
+    GameObject gb;
 
     void Update()
     {
-        Spawntarget();
+        Timer +=  Time.deltaTime;
+        if(Timer >= 1)
+        {
+            Spawntarget();
+            Timer = 0;
+        }
+        Destroy(gb, 1);
+
     }
-    IEnumerator Spawntarget()
+    void Spawntarget()
     {
         Vector3 randomSpawnPosition = new Vector3(Random.Range(10, -11), Random.Range(0, 11), Random.Range(0, 10));
-        Instantiate(target, randomSpawnPosition, Quaternion.identity);
-        yield return new WaitForSeconds(1f);
+        GameObject GB = Instantiate(target, randomSpawnPosition, Quaternion.identity);
+        gb = GB;
     }
    
 }
