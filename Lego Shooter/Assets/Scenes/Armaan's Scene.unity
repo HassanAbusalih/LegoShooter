@@ -153,7 +153,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 4075046584726521083, guid: b5f59a1c7827c784c9ab3143888c70a9, type: 3}
-  Timer: 0
+  SpawnTime: 3
+  X: 10
+  YDown: 0
+  YUp: 10
+  Z: 10
+  test: {x: 0, y: 5, z: 0}
 --- !u!4 &22877365
 Transform:
   m_ObjectHideFlags: 0
