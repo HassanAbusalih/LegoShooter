@@ -13,6 +13,7 @@ public class RandomSpawner : MonoBehaviour
     [SerializeField] float YUp;
     [SerializeField] float Z;
     [SerializeField] Vector3 test;
+    public AudioSource TargetBeep;
 
 
     void Update()
@@ -20,6 +21,7 @@ public class RandomSpawner : MonoBehaviour
         Timer +=  Time.deltaTime;
         if(Timer >= SpawnTime)
         {
+            TargetBeep.Play();
             Spawntarget();
             Timer = 0;
         }
