@@ -19,6 +19,8 @@ public class RandomSpawner : MonoBehaviour
 
     void Update()
     {
+        
+
         Timer +=  Time.deltaTime;
         if(Timer >= SpawnTime)
         {
