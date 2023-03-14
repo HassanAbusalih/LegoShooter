@@ -8,6 +8,7 @@ public class RandomSpawner : MonoBehaviour
     float Timer = 0;
     public float SpawnTime;
     GameObject gb;
+    [SerializeField] int numberToSpawn;
     [SerializeField] float X;
     [SerializeField] float YDown;
     [SerializeField] float YUp;
@@ -22,10 +23,13 @@ public class RandomSpawner : MonoBehaviour
         if(Timer >= SpawnTime)
         {
             TargetBeep.Play();
-            Spawntarget();
+            for (int i = numberToSpawn; i > 0; i--)
+            {
+                Spawntarget();
+                Destroy(gb, SpawnTime);
+            }
             Timer = 0;
         }
-        Destroy(gb, SpawnTime);
 
     }
     void Spawntarget()

@@ -23,6 +23,7 @@ public class GunAssembler : MonoBehaviour
         GameObject completeGun = new GameObject("Player Gun");
         completeGun.transform.position = assemblyPoint.transform.position;
         completeGun.AddComponent<Gun>();
+        completeGun.AddComponent<Rigidbody>();
         GunBody gunBody = (GunBody)gunParts[0];
         for (int i = 0; i < gunParts.Count; i++)
         {
