@@ -54,6 +54,7 @@ public class Gun : MonoBehaviour
             GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
             Vector3 bulletAccuracy = transform.forward + new Vector3(Random.Range(-body.accuracy, body.accuracy), Random.Range(-body.accuracy, body.accuracy), 0);
             newBullet.GetComponent<Rigidbody>().AddForce(bulletAccuracy.normalized * barrel.bulletSpeed);
+            newBullet.GetComponent<Bullet>().direction = bulletAccuracy;
             newBullet.GetComponent<Bullet>().damage = mag.damage;
             newBullet.GetComponent<Bullet>().minRange = barrel.minRange;
             newBullet.GetComponent<Bullet>().maxRange = barrel.maxRange;

@@ -5,15 +5,13 @@ using UnityEngine;
 public class SpawnerHP : MonoBehaviour
 {
     public float health;
-    public GameObject wintext;
-
 
     void Update()
     {
-        if(health >= 0)
+        if (health <= 0)
         {
             FindObjectOfType<SpawnerScore>().score++;
-            wintext.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }

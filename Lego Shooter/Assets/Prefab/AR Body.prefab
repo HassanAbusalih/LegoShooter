@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5865369775090110667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.141, y: -0.016, z: -0.301}
+  m_LocalPosition: {x: -0.971, y: -0.016, z: -0.081}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5865369775169410775}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.826, y: 0, z: 0}
+  m_LocalPosition: {x: -1.884, y: -0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -125,11 +125,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8755963499351615674}
-  - {fileID: 5865369776622120444}
   - {fileID: 5865369775090110666}
   - {fileID: 5865369775169410774}
+  - {fileID: 5865369776622120444}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &893745121248116584
 MeshFilter:
@@ -194,8 +194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partType: 0
-  magAttachPoint: {fileID: 0}
-  barrelAttachPoint: {fileID: 5865369776622120445}
+  magAttachPoint: {fileID: 5865369775090110667}
+  barrelAttachPoint: {fileID: 5865369775169410775}
   rateOfFire: 0
   shotInterval: 0
   accuracy: 0

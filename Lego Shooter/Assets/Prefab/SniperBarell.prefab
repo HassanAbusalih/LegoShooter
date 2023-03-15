@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 99630668530976864}
-  - component: {fileID: 99630668530976865}
   m_Layer: 0
   m_Name: PivotPoint
   m_TagString: Untagged
@@ -32,27 +31,6 @@ Transform:
   m_Father: {fileID: 4696970610834893387}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &99630668530976865
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99630668530976879}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8908829, y: 0.63889825, z: 0.21949936}
-  m_Center: {x: -0.054558538, y: 0.18055049, z: -0.06572351}
 --- !u!1 &753750806294269332
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +148,7 @@ Transform:
   - {fileID: 7005348577153489519}
   - {fileID: 99630668530976864}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5495358766815289976
 MeshFilter:
